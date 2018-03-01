@@ -52,7 +52,7 @@ signs data set:
 * The size of training set is 34799.
 * The size of the validation set is 4410.
 * The size of test set is 12630.
-* The shape of a traffic sign image is (32,32,3)
+* The shape of a traffic sign image is (32,32,3).
 * The number of unique classes/labels in the data set is 43.
 
 #### 2. Include an exploratory visualization of the dataset.
@@ -61,7 +61,7 @@ Here are some exploratory visualizations of the data set. The first is the table
 
 ![alt text][image1]
 
-Then I use a bar figure to show the distribution of labels in trainning set.
+Then I used a bar figure to show the distribution of labels in trainning set.
 
 ![alt text][image11]
 
@@ -76,7 +76,7 @@ Here is an example of traffic sign images before and after grayscaling and norma
 
 ![alt text][image6]
 
-As you can observe in the distribution figure, some label classes are quite few compared with others, i.e., class 0. This may add some bias to the network and result in a bad performance for predicting some signs. Therefore, I decided to add some augmented images to the sign images whose number is less than 750. In augmented image generating process, I used 'scaling' and 'rotating' to the original image. One example is shown as following.
+As you can observe in the distribution figure, some label classes are quite few compared with others, i.e., class 0. This may add some bias to the network and result in a bad performance for predicting some signs. Therefore, I decided to add some augmented images to the sign images whose number are less than 750. In augmented image generating process, I used 'scaling' and 'rotating' to the original image. One example is shown as following.
 
 ![alt text][image2] ![alt text][image3] ![alt text][image4]
 
@@ -120,7 +120,7 @@ Here are the results of the prediction:
 
 ![alt text][image9] 
 
-The model was able to correctly guess 5 of the 9 traffic signs, which gives an accuracy of 55.6%. Much worse than test set accuracy. Probably the web images have lower resolution (image 8), more complexed background (image 6) and are pictured from a different angle (image 9). The prediction results are not as good as test set. From the prediction result, I believe I need to read some peer's paper to further improve my neural network.
+The model was able to correctly guess 5 of the 9 traffic signs, which gives an accuracy of 0.556. Much worse than test set accuracy. Probably the web images have lower resolution (image 8), more complexed background (image 6) and are pictured from a different angle (image 9). The prediction results are not as good as test set. From the prediction result, I believe I need to read some peer's paper to further improve my neural network.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
